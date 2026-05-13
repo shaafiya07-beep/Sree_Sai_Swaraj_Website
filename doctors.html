@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Doctors | Sree Sai Swaraj Dental Clinic</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7fbff;
+color:#1e293b;
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+section{
+padding:100px 7%;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+padding:22px 7%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:white;
+
+z-index:9999;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+font-size:2rem;
+font-weight:700;
+color:#0f172a;
+text-decoration:none;
+
+}
+
+.nav-menu{
+
+display:flex;
+gap:2rem;
+align-items:center;
+
+}
+
+.nav-menu a{
+
+text-decoration:none;
+color:#0f172a;
+font-size:.85rem;
+text-transform:uppercase;
+letter-spacing:.12em;
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+padding-top:180px;
+padding-bottom:120px;
+
+background:
+linear-gradient(rgba(2,6,23,.75),rgba(2,6,23,.75)),
+url('https://images.unsplash.com/photo-1588776814546-daab30f310ce?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:5rem;
+margin-bottom:1rem;
+
+}
+
+.hero p{
+
+max-width:850px;
+margin:auto;
+
+line-height:2;
+
+font-size:1.05rem;
+
+color:rgba(255,255,255,.82);
+
+}
+
+/* =========================
+COMMON
+========================= */
+
+.section-tag{
+
+font-size:.82rem;
+
+text-transform:uppercase;
+
+letter-spacing:.18em;
+
+color:#0ea5e9;
+
+margin-bottom:1rem;
+
+font-weight:600;
+
+}
+
+.section-title{
+
+font-size:3.5rem;
+
+margin-bottom:1rem;
+
+}
+
+.section-sub{
+
+max-width:750px;
+
+line-height:2;
+
+color:#64748b;
+
+}
+
+/* =========================
+DOCTOR PROFILE
+========================= */
+
+.doctor-grid{
+
+margin-top:5rem;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:5rem;
+
+align-items:center;
+
+}
+
+.doctor-image{
+
+width:100%;
+height:760px;
+
+object-fit:cover;
+
+border-radius:34px;
+
+box-shadow:0 30px 60px rgba(0,0,0,.08);
+
+}
+
+.doctor-content h2{
+
+font-size:3rem;
+
+margin-bottom:1rem;
+
+}
+
+.doctor-content h4{
+
+color:#0ea5e9;
+
+margin-bottom:1.5rem;
+
+font-weight:600;
+
+}
+
+.doctor-content p{
+
+line-height:2;
+
+color:#64748b;
+
+margin-bottom:2rem;
+
+}
+
+/* =========================
+QUALIFICATIONS
+========================= */
+
+.qualifications{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:1rem;
+
+}
+
+.qual-card{
+
+background:white;
+
+padding:1.5rem;
+
+border-radius:22px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.05);
+
+}
+
+.qual-card h3{
+
+margin-bottom:.6rem;
+
+font-size:1.1rem;
+
+}
+
+.qual-card p{
+
+font-size:.92rem;
+
+line-height:1.7;
+
+color:#64748b;
+
+}
+
+/* =========================
+EXPERTISE
+========================= */
+
+.expertise{
+
+background:#0f172a;
+
+color:white;
+
+}
+
+.expertise-grid{
+
+margin-top:4rem;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:2rem;
+
+}
+
+.expertise-card{
+
+background:rgba(255,255,255,.06);
+
+padding:2rem;
+
+border-radius:26px;
+
+text-align:center;
+
+}
+
+.expertise-card img{
+
+width:90px;
+height:90px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+margin:auto;
+
+margin-bottom:1.5rem;
+
+}
+
+.expertise-card h3{
+
+margin-bottom:1rem;
+
+}
+
+.expertise-card p{
+
+line-height:1.8;
+
+color:rgba(255,255,255,.72);
+
+font-size:.95rem;
+
+}
+
+/* =========================
+PHILOSOPHY
+========================= */
+
+.philosophy-grid{
+
+margin-top:5rem;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:4rem;
+
+align-items:center;
+
+}
+
+.philosophy-image{
+
+width:100%;
+
+height:520px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+}
+
+.philosophy-content h2{
+
+font-size:3rem;
+
+margin-bottom:1rem;
+
+}
+
+.philosophy-content p{
+
+line-height:2;
+
+color:#64748b;
+
+margin-bottom:2rem;
+
+}
+
+.philosophy-points{
+
+display:grid;
+
+gap:1rem;
+
+}
+
+.point{
+
+background:white;
+
+padding:1.3rem;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+display:flex;
+
+gap:1rem;
+
+align-items:flex-start;
+
+}
+
+.tick{
+
+width:38px;
+height:38px;
+
+border-radius:50%;
+
+background:#0ea5e9;
+
+color:white;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+flex-shrink:0;
+
+font-weight:700;
+
+}
+
+/* =========================
+TIMELINE
+========================= */
+
+.timeline{
+
+background:white;
+
+}
+
+.timeline-grid{
+
+margin-top:4rem;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:2rem;
+
+}
+
+.timeline-card{
+
+padding:2rem;
+
+border-radius:24px;
+
+background:#f1f5f9;
+
+position:relative;
+
+}
+
+.timeline-card::before{
+
+content:'';
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:6px;
+height:100%;
+
+background:#0ea5e9;
+
+border-radius:10px;
+
+}
+
+.timeline-card h2{
+
+font-size:2rem;
+
+color:#0ea5e9;
+
+margin-bottom:1rem;
+
+padding-left:1rem;
+
+}
+
+.timeline-card h3{
+
+padding-left:1rem;
+
+margin-bottom:1rem;
+
+}
+
+.timeline-card p{
+
+padding-left:1rem;
+
+line-height:1.8;
+
+color:#64748b;
+
+}
+
+/* =========================
+TESTIMONIAL
+========================= */
+
+.testimonial{
+
+background:
+linear-gradient(rgba(2,6,23,.82),rgba(2,6,23,.82)),
+url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+.testimonial-box{
+
+max-width:900px;
+
+margin:auto;
+
+background:rgba(255,255,255,.08);
+
+padding:4rem;
+
+border-radius:34px;
+
+backdrop-filter:blur(10px);
+
+margin-top:4rem;
+
+}
+
+.testimonial-box p{
+
+font-size:1.2rem;
+
+line-height:2;
+
+margin-bottom:2rem;
+
+color:rgba(255,255,255,.82);
+
+}
+
+.testimonial-user{
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+gap:1rem;
+
+}
+
+.testimonial-user img{
+
+width:70px;
+height:70px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+padding:60px 7%;
+
+text-align:center;
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.nav-menu{
+display:none;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.section-title{
+font-size:2.4rem;
+}
+
+.doctor-grid,
+.philosophy-grid{
+grid-template-columns:1fr;
+}
+
+.qualifications{
+grid-template-columns:1fr;
+}
+
+.expertise-grid,
+.timeline-grid{
+grid-template-columns:1fr;
+}
+
+.doctor-image{
+height:420px;
+}
+
+.philosophy-image{
+height:320px;
+}
+
+.testimonial-box{
+padding:2rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+Dental Clinic
+</a>
+
+<div class="nav-menu">
+
+<a href="index.html">Home</a>
+<a href="treatments.html">Treatments</a>
+<a href="doctors.html">Doctors</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+Meet Our Dental Specialists
+</h1>
+
+<p>
+Experienced dental professionals dedicated to providing safe, modern and patient-focused oral healthcare with advanced treatment planning and compassionate consultations.
+</p>
+
+</div>
+
+</section>
+
+<!-- MAIN DOCTOR -->
+
+<section>
+
+<div class="container">
+
+<div class="section-tag">
+Lead Specialist
+</div>
+
+<h2 class="section-title">
+Experienced & Trusted Dental Care
+</h2>
+
+<p class="section-sub">
+Advanced prosthodontic and dental treatments designed around patient comfort, smile restoration and long-term oral health support.
+</p>
+
+<div class="doctor-grid">
+
+<div>
+
+<img 
+src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1600&auto=format&fit=crop"
+class="doctor-image"
+>
+
+</div>
+
+<div class="doctor-content">
+
+<h2>
+Dr. Sampath Kumar Kakaraparthi
+</h2>
+
+<h4>
+Consultant Prosthodontist & Implant Specialist
+</h4>
+
+<p>
+Dr. Sampath Kumar Kakaraparthi is known for advanced dental care with a strong focus on precision treatment planning, smile restoration and patient comfort. The clinic follows modern sterilization standards and uses advanced technology to improve treatment quality and patient experience.
+</p>
+
+<p>
+With experience in implant procedures, root canal treatments, cosmetic dentistry and smile designing, the clinic has become a trusted destination for comprehensive dental care in Guntur.
+</p>
+
+<div class="qualifications">
+
+<div class="qual-card">
+
+<h3>
+Advanced Prosthodontics
+</h3>
+
+<p>
+Specialized restorative and cosmetic dental treatment expertise.
+</p>
+
+</div>
+
+<div class="qual-card">
+
+<h3>
+Dental Implants
+</h3>
+
+<p>
+Modern implant procedures focused on natural smile restoration.
+</p>
+
+</div>
+
+<div class="qual-card">
+
+<h3>
+Smile Designing
+</h3>
+
+<p>
+Customized cosmetic dentistry treatment planning for aesthetic improvement.
+</p>
+
+</div>
+
+<div class="qual-card">
+
+<h3>
+Patient-Centered Care
+</h3>
+
+<p>
+Supportive consultation approach designed around patient comfort.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERTISE -->
+
+<section class="expertise">
+
+<div class="container">
+
+<div class="section-tag" style="color:#7dd3fc">
+Core Expertise
+</div>
+
+<h2 class="section-title">
+Specialized Dental Services
+</h2>
+
+<div class="expertise-grid">
+
+<div class="expertise-card">
+
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=500&auto=format&fit=crop">
+
+<h3>
+Root Canal Care
+</h3>
+
+<p>
+Painless root canal treatments with advanced precision techniques.
+</p>
+
+</div>
+
+<div class="expertise-card">
+
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=500&auto=format&fit=crop">
+
+<h3>
+Dental Implants
+</h3>
+
+<p>
+Permanent smile restoration with modern implant procedures.
+</p>
+
+</div>
+
+<div class="expertise-card">
+
+<img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?q=80&w=500&auto=format&fit=crop">
+
+<h3>
+Smile Designing
+</h3>
+
+<p>
+Advanced cosmetic dentistry and smile makeover treatments.
+</p>
+
+</div>
+
+<div class="expertise-card">
+
+<img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=500&auto=format&fit=crop">
+
+<h3>
+Wisdom Tooth Surgery
+</h3>
+
+<p>
+Safe and comfortable surgical tooth extraction procedures.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PHILOSOPHY -->
+
+<section>
+
+<div class="container">
+
+<div class="philosophy-grid">
+
+<div>
+
+<img 
+src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1600&auto=format&fit=crop"
+class="philosophy-image"
+>
+
+</div>
+
+<div class="philosophy-content">
+
+<div class="section-tag">
+Patient Care Philosophy
+</div>
+
+<h2>
+Modern Dentistry With Human Care
+</h2>
+
+<p>
+The clinic focuses on combining modern dental technology with patient-friendly consultation approaches to create a safe, comfortable and trustworthy treatment experience.
+</p>
+
+<div class="philosophy-points">
+
+<div class="point">
+
+<div class="tick">
+✓
+</div>
+
+<div>
+
+<h4>
+Comfort-Focused Procedures
+</h4>
+
+<p>
+Treatment approaches designed to reduce anxiety and improve patient comfort.
+</p>
+
+</div>
+
+</div>
+
+<div class="point">
+
+<div class="tick">
+✓
+</div>
+
+<div>
+
+<h4>
+Strict Hygiene Standards
+</h4>
+
+<p>
+Advanced sterilization and cleanliness protocols followed for every treatment.
+</p>
+
+</div>
+
+</div>
+
+<div class="point">
+
+<div class="tick">
+✓
+</div>
+
+<div>
+
+<h4>
+Long-Term Oral Health
+</h4>
+
+<p>
+Focus on preventive care and sustainable oral health improvements.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TIMELINE -->
+
+<section class="timeline">
+
+<div class="container">
+
+<div class="section-tag">
+Professional Journey
+</div>
+
+<h2 class="section-title">
+Building Trusted Dental Care
+</h2>
+
+<div class="timeline-grid">
+
+<div class="timeline-card">
+
+<h2>
+01
+</h2>
+
+<h3>
+Dental Education
+</h3>
+
+<p>
+Advanced dental education and training in restorative and cosmetic dentistry.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<h2>
+02
+</h2>
+
+<h3>
+Clinical Experience
+</h3>
+
+<p>
+Hands-on experience in advanced prosthodontic and implant procedures.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<h2>
+03
+</h2>
+
+<h3>
+Modern Technology
+</h3>
+
+<p>
+Implementation of modern dental equipment and treatment systems.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<h2>
+04
+</h2>
+
+<h3>
+Trusted Patient Care
+</h3>
+
+<p>
+Building long-term trust through patient-focused treatment and care quality.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+
+<section class="testimonial">
+
+<div class="container">
+
+<div class="section-tag" style="color:#7dd3fc">
+Patient Experience
+</div>
+
+<h2 class="section-title">
+What Patients Say About The Doctor
+</h2>
+
+<div class="testimonial-box">
+
+<p>
+“The doctor explained everything clearly and treated me with patience and care. The treatment process was smooth, hygienic and very comfortable.”
+</p>
+
+<div class="testimonial-user">
+
+<img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+<div>
+
+<h3>
+Chinnammai Peddi
+</h3>
+
+<p>
+Verified Patient
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="font-size:2.5rem;margin-bottom:1rem">
+Sree Sai Swaraj Dental Clinic
+</h2>
+
+<p>
+Trusted Dental Specialists · Advanced Care · Modern Dentistry
+</p>
+
+</footer>
+
+</body>
+
+</html>

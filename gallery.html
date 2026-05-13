@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Sree Sai Swaraj Dental Clinic</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7fbff;
+color:#1e293b;
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+section{
+padding:100px 7%;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+padding:22px 7%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:white;
+
+z-index:9999;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+font-size:2rem;
+font-weight:700;
+color:#0f172a;
+text-decoration:none;
+
+}
+
+.nav-menu{
+
+display:flex;
+gap:2rem;
+align-items:center;
+
+}
+
+.nav-menu a{
+
+text-decoration:none;
+color:#0f172a;
+font-size:.85rem;
+text-transform:uppercase;
+letter-spacing:.12em;
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+padding-top:180px;
+padding-bottom:120px;
+
+background:
+linear-gradient(rgba(2,6,23,.72),rgba(2,6,23,.72)),
+url('https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:5rem;
+margin-bottom:1rem;
+
+}
+
+.hero p{
+
+max-width:850px;
+margin:auto;
+
+line-height:2;
+
+font-size:1.05rem;
+
+color:rgba(255,255,255,.82);
+
+}
+
+/* =========================
+COMMON
+========================= */
+
+.section-tag{
+
+font-size:.82rem;
+
+text-transform:uppercase;
+
+letter-spacing:.18em;
+
+color:#0ea5e9;
+
+margin-bottom:1rem;
+
+font-weight:600;
+
+}
+
+.section-title{
+
+font-size:3.5rem;
+
+margin-bottom:1rem;
+
+}
+
+.section-sub{
+
+max-width:750px;
+
+line-height:2;
+
+color:#64748b;
+
+}
+
+/* =========================
+GALLERY GRID
+========================= */
+
+.gallery-grid{
+
+margin-top:5rem;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:2rem;
+
+}
+
+.gallery-card{
+
+background:white;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 20px 50px rgba(0,0,0,.05);
+
+transition:.35s;
+
+}
+
+.gallery-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.gallery-card img{
+
+width:100%;
+height:280px;
+
+object-fit:cover;
+
+}
+
+.gallery-content{
+
+padding:2rem;
+
+}
+
+.gallery-content h3{
+
+font-size:1.5rem;
+
+margin-bottom:1rem;
+
+}
+
+.gallery-content p{
+
+line-height:1.9;
+
+color:#64748b;
+
+}
+
+/* =========================
+SHOWCASE SECTION
+========================= */
+
+.showcase{
+
+background:#0f172a;
+
+color:white;
+
+}
+
+.showcase-grid{
+
+margin-top:5rem;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:4rem;
+
+align-items:center;
+
+}
+
+.showcase-image{
+
+width:100%;
+height:620px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+}
+
+.showcase-content h2{
+
+font-size:3rem;
+
+margin-bottom:1rem;
+
+}
+
+.showcase-content p{
+
+line-height:2;
+
+color:rgba(255,255,255,.78);
+
+margin-bottom:2rem;
+
+}
+
+.showcase-points{
+
+display:grid;
+
+gap:1rem;
+
+}
+
+.point{
+
+background:rgba(255,255,255,.06);
+
+padding:1.4rem;
+
+border-radius:18px;
+
+display:flex;
+
+gap:1rem;
+
+align-items:flex-start;
+
+}
+
+.tick{
+
+width:40px;
+height:40px;
+
+border-radius:50%;
+
+background:#0ea5e9;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+flex-shrink:0;
+
+font-weight:700;
+
+}
+
+/* =========================
+CLINIC HIGHLIGHTS
+========================= */
+
+.highlights-grid{
+
+margin-top:4rem;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:2rem;
+
+}
+
+.highlight-card{
+
+background:white;
+
+padding:2rem;
+
+border-radius:28px;
+
+text-align:center;
+
+box-shadow:0 20px 50px rgba(0,0,0,.05);
+
+}
+
+.highlight-card h2{
+
+font-size:3rem;
+
+color:#0ea5e9;
+
+margin-bottom:.5rem;
+
+}
+
+.highlight-card p{
+
+color:#64748b;
+
+line-height:1.8;
+
+}
+
+/* =========================
+BEFORE AFTER
+========================= */
+
+.before-after{
+
+margin-top:5rem;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:3rem;
+
+}
+
+.before-card{
+
+background:white;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 20px 50px rgba(0,0,0,.05);
+
+}
+
+.before-card img{
+
+width:100%;
+height:380px;
+
+object-fit:cover;
+
+}
+
+.before-content{
+
+padding:2rem;
+
+}
+
+.before-content h3{
+
+margin-bottom:1rem;
+
+font-size:1.8rem;
+
+}
+
+.before-content p{
+
+line-height:1.9;
+
+color:#64748b;
+
+}
+
+/* =========================
+PATIENT EXPERIENCE
+========================= */
+
+.experience{
+
+background:
+linear-gradient(rgba(2,6,23,.82),rgba(2,6,23,.82)),
+url('https://images.unsplash.com/photo-1588776814546-daab30f310ce?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+.exp-box{
+
+margin-top:4rem;
+
+background:rgba(255,255,255,.08);
+
+padding:4rem;
+
+border-radius:34px;
+
+backdrop-filter:blur(10px);
+
+}
+
+.exp-box p{
+
+max-width:900px;
+
+margin:auto;
+
+line-height:2;
+
+font-size:1.15rem;
+
+color:rgba(255,255,255,.82);
+
+margin-bottom:2rem;
+
+}
+
+.exp-stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:2rem;
+
+margin-top:3rem;
+
+}
+
+.exp-stat{
+
+background:rgba(255,255,255,.06);
+
+padding:2rem;
+
+border-radius:24px;
+
+}
+
+.exp-stat h2{
+
+font-size:3rem;
+
+margin-bottom:.5rem;
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+padding:60px 7%;
+
+text-align:center;
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.nav-menu{
+display:none;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.section-title{
+font-size:2.4rem;
+}
+
+.gallery-grid,
+.highlights-grid,
+.exp-stats{
+grid-template-columns:1fr;
+}
+
+.showcase-grid,
+.before-after{
+grid-template-columns:1fr;
+}
+
+.showcase-image{
+height:350px;
+}
+
+.before-card img{
+height:240px;
+}
+
+.exp-box{
+padding:2rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+Dental Clinic
+</a>
+
+<div class="nav-menu">
+
+<a href="index.html">Home</a>
+<a href="treatments.html">Treatments</a>
+<a href="doctors.html">Doctors</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+Inside Our Dental Clinic
+</h1>
+
+<p>
+Explore our modern treatment environments, advanced dental technology, patient-focused consultation spaces and smile restoration care experience.
+</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section>
+
+<div class="container">
+
+<div class="section-tag">
+Clinic Gallery
+</div>
+
+<h2 class="section-title">
+Modern Dental Care Environment
+</h2>
+
+<p class="section-sub">
+Designed to create a safe, hygienic and comfortable experience for every patient with advanced treatment systems and modern consultation spaces.
+</p>
+
+<div class="gallery-grid">
+
+<div class="gallery-card">
+
+<img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1400&auto=format&fit=crop">
+
+<div class="gallery-content">
+
+<h3>
+Advanced Consultation Rooms
+</h3>
+
+<p>
+Comfortable consultation spaces designed for patient privacy and modern dental evaluations.
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?q=80&w=1400&auto=format&fit=crop">
+
+<div class="gallery-content">
+
+<h3>
+Technology Driven Dentistry
+</h3>
+
+<p>
+Modern dental equipment and digital diagnostic systems for precise treatment planning.
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?q=80&w=1400&auto=format&fit=crop">
+
+<div class="gallery-content">
+
+<h3>
+Professional Dental Team
+</h3>
+
+<p>
+Friendly and supportive dental professionals focused on patient comfort and care.
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=1400&auto=format&fit=crop">
+
+<div class="gallery-content">
+
+<h3>
+Smile Restoration Care
+</h3>
+
+<p>
+Comprehensive dental procedures for restoring smile aesthetics and oral function.
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1400&auto=format&fit=crop">
+
+<div class="gallery-content">
+
+<h3>
+Precision Treatment Planning
+</h3>
+
+<p>
+Advanced dental evaluations designed for long-term oral health improvements.
+</p>
+
+</div>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?q=80&w=1400&auto=format&fit=crop">
+
+<div class="gallery-content">
+
+<h3>
+Cosmetic Dentistry Solutions
+</h3>
+
+<p>
+Smile designing and cosmetic treatment procedures focused on confidence enhancement.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SHOWCASE -->
+
+<section class="showcase">
+
+<div class="container">
+
+<div class="showcase-grid">
+
+<div>
+
+<img 
+src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1600&auto=format&fit=crop"
+class="showcase-image"
+>
+
+</div>
+
+<div class="showcase-content">
+
+<div class="section-tag" style="color:#7dd3fc">
+Clinic Standards
+</div>
+
+<h2>
+Safe, Hygienic & Trusted Dental Care
+</h2>
+
+<p>
+The clinic focuses on maintaining modern sterilization protocols, advanced treatment systems and patient-focused dental care environments for a safe and comfortable experience.
+</p>
+
+<div class="showcase-points">
+
+<div class="point">
+
+<div class="tick">
+✓
+</div>
+
+<div>
+
+<h4>
+Advanced Sterilization Standards
+</h4>
+
+<p>
+Strict hygiene and cleanliness maintained across all treatment procedures.
+</p>
+
+</div>
+
+</div>
+
+<div class="point">
+
+<div class="tick">
+✓
+</div>
+
+<div>
+
+<h4>
+Modern Treatment Systems
+</h4>
+
+<p>
+Digital diagnosis and precision dental equipment for improved treatment quality.
+</p>
+
+</div>
+
+</div>
+
+<div class="point">
+
+<div class="tick">
+✓
+</div>
+
+<div>
+
+<h4>
+Comfort-Focused Environment
+</h4>
+
+<p>
+Designed to reduce anxiety and improve patient comfort throughout treatment.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HIGHLIGHTS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-tag">
+Clinic Highlights
+</div>
+
+<h2 class="section-title">
+Building Long-Term Patient Trust
+</h2>
+
+<div class="highlights-grid">
+
+<div class="highlight-card">
+
+<h2>
+1122+
+</h2>
+
+<p>
+Verified Google Reviews from satisfied patients and families.
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<h2>
+5.0 ★
+</h2>
+
+<p>
+Consistently high patient satisfaction and treatment experience ratings.
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<h2>
+1000+
+</h2>
+
+<p>
+Successful dental procedures including implants and smile restorations.
+</p>
+
+</div>
+
+<div class="highlight-card">
+
+<h2>
+Safe
+</h2>
+
+<p>
+Modern sterilization standards and hygienic clinical practices.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BEFORE AFTER -->
+
+<section>
+
+<div class="container">
+
+<div class="section-tag">
+Smile Transformation
+</div>
+
+<h2 class="section-title">
+Restoring Smiles & Confidence
+</h2>
+
+<div class="before-after">
+
+<div class="before-card">
+
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1600&auto=format&fit=crop">
+
+<div class="before-content">
+
+<h3>
+Dental Implant Procedures
+</h3>
+
+<p>
+Permanent and natural-looking implant procedures designed to restore oral function and smile confidence.
+</p>
+
+</div>
+
+</div>
+
+<div class="before-card">
+
+<img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=1600&auto=format&fit=crop">
+
+<div class="before-content">
+
+<h3>
+Smile Designing Treatments
+</h3>
+
+<p>
+Customized cosmetic dentistry solutions focused on improving smile aesthetics and facial appearance.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section class="experience">
+
+<div class="container">
+
+<div class="section-tag" style="color:#7dd3fc">
+Patient Experience
+</div>
+
+<h2 class="section-title">
+Designed Around Patient Comfort
+</h2>
+
+<div class="exp-box">
+
+<p>
+“Our focus is to create a dental care experience that feels safe, comfortable and trustworthy while delivering modern treatment quality and long-term oral health support.”
+</p>
+
+<div class="exp-stats">
+
+<div class="exp-stat">
+
+<h2>
+10+
+</h2>
+
+<p>
+Advanced Treatment Categories
+</p>
+
+</div>
+
+<div class="exp-stat">
+
+<h2>
+100%
+</h2>
+
+<p>
+Sterilized Treatment Environment
+</p>
+
+</div>
+
+<div class="exp-stat">
+
+<h2>
+Modern
+</h2>
+
+<p>
+Dental Technology Systems
+</p>
+
+</div>
+
+<div class="exp-stat">
+
+<h2>
+Trusted
+</h2>
+
+<p>
+Patient-Focused Care Experience
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2 style="font-size:2.5rem;margin-bottom:1rem">
+Sree Sai Swaraj Dental Clinic
+</h2>
+
+<p>
+Advanced Dental Care · Modern Facilities · Trusted Smiles
+</p>
+
+</footer>
+
+</body>
+
+</html>

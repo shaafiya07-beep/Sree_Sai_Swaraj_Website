@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Sree Sai Swaraj Dental Clinic</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f7fbff;
+color:#1e293b;
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+section{
+padding:100px 7%;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+.navbar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+padding:22px 7%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:white;
+
+z-index:9999;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+
+font-size:2rem;
+font-weight:700;
+color:#0f172a;
+text-decoration:none;
+
+}
+
+.nav-menu{
+
+display:flex;
+gap:2rem;
+align-items:center;
+
+}
+
+.nav-menu a{
+
+text-decoration:none;
+color:#0f172a;
+font-size:.85rem;
+text-transform:uppercase;
+letter-spacing:.12em;
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+
+padding-top:180px;
+padding-bottom:120px;
+
+background:
+linear-gradient(rgba(2,6,23,.75),rgba(2,6,23,.75)),
+url('https://images.unsplash.com/photo-1588776814546-daab30f310ce?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:5rem;
+margin-bottom:1rem;
+
+}
+
+.hero p{
+
+max-width:850px;
+margin:auto;
+
+line-height:2;
+
+font-size:1.05rem;
+
+color:rgba(255,255,255,.82);
+
+}
+
+/* =========================
+COMMON
+========================= */
+
+.section-tag{
+
+font-size:.82rem;
+
+text-transform:uppercase;
+
+letter-spacing:.18em;
+
+color:#0ea5e9;
+
+margin-bottom:1rem;
+
+font-weight:600;
+
+}
+
+.section-title{
+
+font-size:3.5rem;
+
+margin-bottom:1rem;
+
+}
+
+.section-sub{
+
+max-width:750px;
+
+line-height:2;
+
+color:#64748b;
+
+}
+
+/* =========================
+CONTACT GRID
+========================= */
+
+.contact-grid{
+
+margin-top:5rem;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:4rem;
+
+align-items:start;
+
+}
+
+/* =========================
+INFO CARD
+========================= */
+
+.info-card{
+
+background:white;
+
+padding:3rem;
+
+border-radius:34px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.05);
+
+}
+
+.info-card h2{
+
+font-size:2.5rem;
+
+margin-bottom:1rem;
+
+}
+
+.info-card p{
+
+line-height:2;
+
+color:#64748b;
+
+margin-bottom:2rem;
+
+}
+
+.info-boxes{
+
+display:grid;
+
+gap:1.5rem;
+
+margin-top:2rem;
+
+}
+
+.info-box{
+
+display:flex;
+
+gap:1rem;
+
+align-items:flex-start;
+
+padding:1.5rem;
+
+background:#f1f5f9;
+
+border-radius:20px;
+
+}
+
+.info-icon{
+
+width:52px;
+height:52px;
+
+border-radius:50%;
+
+background:#0ea5e9;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:1.2rem;
+
+color:white;
+
+flex-shrink:0;
+
+}
+
+/* =========================
+FORM
+========================= */
+
+.form-card{
+
+background:white;
+
+padding:3rem;
+
+border-radius:34px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.05);
+
+}
+
+.form-card h2{
+
+font-size:2.5rem;
+
+margin-bottom:1rem;
+
+}
+
+.form-card p{
+
+line-height:2;
+
+color:#64748b;
+
+margin-bottom:2rem;
+
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea{
+
+width:100%;
+
+padding:18px;
+
+margin-bottom:1rem;
+
+border:none;
+
+background:#f1f5f9;
+
+border-radius:16px;
+
+outline:none;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+.form-card button{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+border-radius:16px;
+
+background:#0ea5e9;
+
+color:white;
+
+font-size:1rem;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.form-card button:hover{
+
+background:#0284c7;
+
+}
+
+/* =========================
+MAP
+========================= */
+
+.map-section{
+
+margin-top:5rem;
+
+}
+
+.map-box{
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 20px 50px rgba(0,0,0,.05);
+
+}
+
+iframe{
+
+width:100%;
+height:500px;
+
+border:none;
+
+}
+
+/* =========================
+TIMINGS
+========================= */
+
+.timings-grid{
+
+margin-top:5rem;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:2rem;
+
+}
+
+.timing-card{
+
+background:white;
+
+padding:2rem;
+
+border-radius:28px;
+
+text-align:center;
+
+box-shadow:0 20px 50px rgba(0,0,0,.05);
+
+}
+
+.timing-card h2{
+
+font-size:2rem;
+
+color:#0ea5e9;
+
+margin-bottom:.8rem;
+
+}
+
+.timing-card p{
+
+line-height:1.8;
+
+color:#64748b;
+
+}
+
+/* =========================
+EMERGENCY
+========================= */
+
+.emergency{
+
+background:
+linear-gradient(rgba(2,6,23,.82),rgba(2,6,23,.82)),
+url('https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1800&auto=format&fit=crop');
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+.emergency-box{
+
+max-width:900px;
+
+margin:auto;
+
+background:rgba(255,255,255,.08);
+
+padding:4rem;
+
+border-radius:34px;
+
+backdrop-filter:blur(10px);
+
+margin-top:4rem;
+
+}
+
+.emergency-box h2{
+
+font-size:3rem;
+
+margin-bottom:1rem;
+
+}
+
+.emergency-box p{
+
+line-height:2;
+
+color:rgba(255,255,255,.82);
+
+margin-bottom:2rem;
+
+}
+
+.emergency-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:1rem;
+
+flex-wrap:wrap;
+
+}
+
+.emergency-buttons a{
+
+padding:18px 32px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-size:.95rem;
+
+}
+
+.call-btn{
+
+background:#0ea5e9;
+
+color:white;
+
+}
+
+.whatsapp-btn{
+
+background:#25d366;
+
+color:white;
+
+}
+
+/* =========================
+FLOAT BUTTONS
+========================= */
+
+.float-buttons{
+
+position:fixed;
+
+right:20px;
+bottom:20px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:1rem;
+
+z-index:999;
+
+}
+
+.float-btn{
+
+width:62px;
+height:62px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-decoration:none;
+
+font-size:1.4rem;
+
+color:white;
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.whatsapp{
+
+background:#25d366;
+
+}
+
+.call{
+
+background:#0ea5e9;
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+background:#0f172a;
+
+color:white;
+
+padding:60px 7%;
+
+text-align:center;
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.nav-menu{
+display:none;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.section-title{
+font-size:2.4rem;
+}
+
+.contact-grid,
+.timings-grid{
+grid-template-columns:1fr;
+}
+
+.info-card,
+.form-card{
+padding:2rem;
+}
+
+.emergency-box{
+padding:2rem;
+}
+
+iframe{
+height:320px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+Dental Clinic
+</a>
+
+<div class="nav-menu">
+
+<a href="index.html">Home</a>
+<a href="treatments.html">Treatments</a>
+<a href="doctors.html">Doctors</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+Contact Our Clinic
+</h1>
+
+<p>
+Book appointments, enquire about treatments or connect with our dental specialists for advanced and trusted oral healthcare support.
+</p>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section>
+
+<div class="container">
+
+<div class="section-tag">
+Get In Touch
+</div>
+
+<h2 class="section-title">
+Visit Our Dental Clinic
+</h2>
+
+<p class="section-sub">
+Our team is available to guide you through appointments, treatment enquiries and consultation scheduling with patient-friendly support.
+</p>
+
+<div class="contact-grid">
+
+<!-- INFO -->
+
+<div class="info-card">
+
+<h2>
+Clinic Information
+</h2>
+
+<p>
+Trusted dental care clinic in Guntur providing modern dental treatments, smile restoration procedures and patient-focused consultation experiences.
+</p>
+
+<div class="info-boxes">
+
+<div class="info-box">
+
+<div class="info-icon">
+📍
+</div>
+
+<div>
+
+<h3>
+Clinic Address
+</h3>
+
+<p>
+Sanakkayala Factory Rd, Kothapeta, Guntur, Andhra Pradesh 522001
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<div class="info-icon">
+📞
+</div>
+
+<div>
+
+<h3>
+Phone Number
+</h3>
+
+<p>
+078933 52679
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<div class="info-icon">
+🕒
+</div>
+
+<div>
+
+<h3>
+Clinic Timings
+</h3>
+
+<p>
+Monday - Saturday · 10AM - 9PM
+</p>
+
+</div>
+
+</div>
+
+<div class="info-box">
+
+<div class="info-icon">
+⭐
+</div>
+
+<div>
+
+<h3>
+Patient Rating
+</h3>
+
+<p>
+5.0 Rating with 1122+ Verified Reviews
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FORM -->
+
+<div class="form-card">
+
+<h2>
+Book Appointment
+</h2>
+
+<p>
+Fill out the form below and our team will contact you for appointment confirmation and consultation scheduling.
+</p>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="tel" placeholder="Phone Number">
+
+<select>
+
+<option>Select Treatment</option>
+
+<option>Root Canal Treatment</option>
+
+<option>Dental Implants</option>
+
+<option>Smile Designing</option>
+
+<option>Wisdom Tooth Removal</option>
+
+<option>Braces & Aligners</option>
+
+</select>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Appointment Request
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MAP -->
+
+<section class="map-section">
+
+<div class="container">
+
+<div class="section-tag">
+Clinic Location
+</div>
+
+<h2 class="section-title">
+Find Our Clinic Easily
+</h2>
+
+<div class="map-box">
+
+<iframe 
+src="https://maps.google.com/maps?q=guntur&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TIMINGS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-tag">
+Consultation Hours
+</div>
+
+<h2 class="section-title">
+Flexible Appointment Timings
+</h2>
+
+<div class="timings-grid">
+
+<div class="timing-card">
+
+<h2>
+Mon
+</h2>
+
+<p>
+10AM - 9PM
+</p>
+
+</div>
+
+<div class="timing-card">
+
+<h2>
+Tue
+</h2>
+
+<p>
+10AM - 9PM
+</p>
+
+</div>
+
+<div class="timing-card">
+
+<h2>
+Wed
+</h2>
+
+<p>
+10AM - 9PM
+</p>
+
+</div>
+
+<div class="timing-card">
+
+<h2>
+Thu - Sat
+</h2>
+
+<p>
+10AM - 9PM
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EMERGENCY -->
+
+<section class="emergency">
+
+<div class="container">
+
+<div class="section-tag" style="color:#7dd3fc">
+Quick Support
+</div>
+
+<div class="emergency-box">
+
+<h2>
+Need Immediate Dental Assistance?
+</h2>
+
+<p>
+Contact our clinic directly for treatment enquiries, emergency dental support and consultation bookings.
+</p>
+
+<div class="emergency-buttons">
+
+<a href="tel:7893352679" class="call-btn">
+Call Clinic
+</a>
+
+<a href="https://wa.me/917893352679" class="whatsapp-btn">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2 style="font-size:2.5rem;margin-bottom:1rem">
+Sree Sai Swaraj Dental Clinic
+</h2>
+
+<p>
+Advanced Dental Care · Safe Treatments · Trusted Patient Experience
+</p>
+
+</footer>
+
+<!-- FLOATING BUTTONS -->
+
+<div class="float-buttons">
+
+<a href="https://wa.me/917893352679" class="float-btn whatsapp">
+💬
+</a>
+
+<a href="tel:7893352679" class="float-btn call">
+📞
+</a>
+
+</div>
+
+</body>
+
+</html>
